@@ -11,9 +11,17 @@
 </head>
 <body>
 
+    {{-- HEADER --}}
+    
+    @include('partials.header')
+
     <main>
         @yield('content')
     </main>
-    
+
+    {{-- FOOTER --}}
+
+    @include('partials.footer')
+
 </body>
 </html>

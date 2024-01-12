@@ -1,5 +1,68 @@
+@use "./partials/mixins" as *;
+@use "./partials/variables" as *;
+@use "./partials/home" as *;
+
 @import '~bootstrap/scss/bootstrap';
 
-body {
-    background-color: aqua;
+
+img {
+    max-width: 100%;
+}
+
+// HEADER 
+.header {
+    height: 130px;
+    &-top {
+        background-color: #1c1c1c;
+        height: 30px;
+    }
+    img {
+        width: 80px;
+    }
+    &-container {
+        padding-top: 10px;
+        width: 90%;
+        margin: 0 auto;
+        @include flex(row, space-between, center)
+    }
+}
+
+
+
+
+.header-nav {
+    @include flex(row, space-between, stretch);
+    list-style: none;
+    gap: 1.2rem;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    li {
+        &:hover{
+            a {
+                color: $primaryColor;
+                border-bottom: 5px solid $primaryColor;
+                padding-bottom: 36px;
+            }
+        }
+    }
+    
+}
+
+.active {
+    color: $primaryColor;
+    border-bottom: 5px solid $primaryColor;
+    padding-bottom: 36px;
+}
+
+.ms_card {
+    height: 100%;
+
+    img {
+        height: 200px;
+        width: 200px;
+    }
 }
