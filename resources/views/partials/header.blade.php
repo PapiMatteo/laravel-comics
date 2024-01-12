@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header align-center">
     <div class="header-top"></div>
     <div class="header-container">
         <img src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="Logo DC Comics">

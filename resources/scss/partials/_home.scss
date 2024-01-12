@@ -30,7 +30,7 @@
 }
 
 .hero {
-    height: 300px;
+    height: 400px;
     background-image: url('../img/jumbotron.jpg');
     background-size: cover;
     width: 100%;
@@ -40,4 +40,100 @@
 .col{
     // width: calc(100% / 6);
     padding: 1rem;
+}
+
+.banner {
+    min-height: 150px;
+    background-color: $primaryColor;
+}
+.small-container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.banner-nav {
+    @include flex(row, space-between);
+    padding-top: 2rem;
+    list-style-type: none;
+    gap: 1rem;
+ 
+    a {
+        @include flex(row, space-between);
+        gap: .5rem;
+        color: white;
+        text-decoration: none;
+        img {
+            width: 50px;
+        }
+    }
+    
+}
+
+.footer-nav {
+    background-image: url('../img/footer-bg.jpg');
+    background-size: cover;
+    min-height: 200px;   
+}
+
+.bg-logo {
+    background-image: url('../img/dc-logo-bg.png');
+    background-size: contain;
+    width: 300px;
+    height: 300px
+}
+
+.footer-content {
+    @include flex(row, space-between, flex-start);
+}
+
+.nav {
+    @include flex();
+    gap: 1.5rem;
+    padding-top: 2rem
+}
+
+.left-nav {
+    @include flex(column, start, start);
+    
+    .home {
+        padding-bottom: 20px
+    }
+}
+
+.right-nav {
+    @include flex(row, center, start);
+    gap: 1.5rem;
+    padding-bottom: 20px
+}
+
+.footer-title {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.footer-list {
+    list-style-type: none;
+    li {
+        a {
+            text-decoration: none;
+            color: rgb(85, 84, 84);
+        }
+    }
+}
+
+.footer-bottom {
+    background-color: #303030;
+    .container {
+        @include flex(row, space-between, center);
+        .footer-button {
+            border: 4px solid $primaryColor;
+            padding: 1rem;
+            a {
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                color: white;
+            }
+        }
+    }
 }

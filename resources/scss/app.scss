@@ -34,6 +34,7 @@ img {
     @include flex(row, space-between, stretch);
     list-style: none;
     gap: 1.2rem;
+    padding-top: 5px;
 
     a {
         text-decoration: none;
@@ -45,7 +46,7 @@ img {
             a {
                 color: $primaryColor;
                 border-bottom: 5px solid $primaryColor;
-                padding-bottom: 36px;
+                padding-bottom: 40px;
             }
         }
     }
